@@ -4,7 +4,7 @@ https://websiteforstudents.com/install-owncloud-on-ubuntu-16-04-lts-with-apache2
 
 https://docs.bitnami.com/oci/apps/owncloud/configuration/configure-fail2ban/
 
-Follow the 9 steps
+* There are 8 Steps
 
 ## Step 1: Install Apache2
 
