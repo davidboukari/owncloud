@@ -156,7 +156,7 @@ findtime = 600
 bantime = 600
 ```
 
-Check the rule
+Check the rules
 ```bash
 sudo fail2ban-regex /opt/bitnami/apps/owncloud/data/owncloud.log /etc/fail2ban/filter.d/owncloud.conf
 ```
