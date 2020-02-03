@@ -61,6 +61,69 @@ max_execution_time = 360
 date.timezone = America/Chicago
 ```
 
+## Step 4: Create OwnCloud Database
+
+```bash
+sudo mysql -u root -p
+CREATE DATABASE owncloud;
+CREATE USER 'ownclouduser'@'localhost' IDENTIFIED BY 'new_password_here';
+GRANT ALL ON owncloud.* TO 'ownclouduser'@'localhost' IDENTIFIED BY 'user_password_here' WITH GRANT OPTION;
+FLUSH PRIVILEGES;
+EXIT;
+```
+
+## Step 5: Download OwnCloud Latest Release
+
+```bash
+cd /tmp && wget https://download.owncloud.org/community/owncloud-10.0.3.zip
+unzip owncloud-10.0.3.zip
+sudo mv owncloud /var/www/html/owncloud/
+```
+
+### Set permissions
+
+```bash
+sudo chown -R www-data:www-data /var/www/html/owncloud/
+sudo chmod -R 755 /var/www/html/owncloud/
+```
+
+## Step 6: Generate the certificate and the private key for your domain myexample.com
+
+* See [https://github.com/davidboukari/ssl]
+
+## Step 7: Configure Apache2
+
+```bash
+<VirtualHost *:443>
+     ServerAdmin admin@myexample.com
+     DocumentRoot /var/www/html/owncloud/
+     ServerName myexample.com
+     ServerAlias www.myexample.com
+  
+     Alias /owncloud "/var/www/html/owncloud/"
+
+     <Directory /var/www/html/owncloud/>
+        Options +FollowSymlinks
+        AllowOverride All
+        Require all granted
+          <IfModule mod_dav.c>
+            Dav off
+          </IfModule>
+        SetEnv HOME /var/www/html/owncloud
+        SetEnv HTTP_HOME /var/www/html/owncloud
+     </Directory>
+
+     ErrorLog ${APACHE_LOG_DIR}/error.log
+     CustomLog ${APACHE_LOG_DIR}/access.log combined
+
+SSLCertificateFile /etc/ssl/certs/myexample.com.crt
+SSLCertificateKeyFile /etc/ssl/private/myexample.com.key
+</VirtualHost>
+```
+
+```bash
+systemctl restart apache2
+```
 
 ## Fail2ban rules
 
