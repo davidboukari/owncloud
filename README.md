@@ -132,7 +132,10 @@ Check the url for your domain name
 
 ## Step 9: Activate Fail2ban rules to block access to bruteforce attempts
 
-Create the /etc/fail2ban/filter.d/owncloud.conf file with the following code:
+* See [https://github.com/davidboukari/fail2ban
+
+Create the /etc/fail2ban/filter.d/owncloud.conf:
+
 ```bash
 [Definition]
 failregex={"reqId":".*","remoteAddr":".*","app":"core","message":"Login failed: '.*' \(Remote IP: '<HOST>\)","level":2,"time":".*"}
