@@ -124,8 +124,13 @@ SSLCertificateKeyFile /etc/ssl/private/myexample.com.key
 ```bash
 systemctl restart apache2
 ```
+## Step 8: Tests
 
-## Fail2ban rules
+Check the url for your domain name
+* [https://www.myexample.com]
+
+
+## Step 9: Activate Fail2ban rules to block access to bruteforce attempts
 
 Create the /etc/fail2ban/filter.d/owncloud.conf file with the following code:
 ```bash
