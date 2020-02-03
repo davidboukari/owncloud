@@ -52,7 +52,7 @@ sudo apt install php${PHP_VERSION} libapache2-mod-php${PHP_VERSION} php${PHP_VER
 
 Update /etc/php/${PHP_VERSION}/apache2/php.ini
 
-````
+````bash
 file_uploads = On
 allow_url_fopen = On
 memory_limit = 256M
