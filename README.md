@@ -162,3 +162,10 @@ sudo fail2ban-regex /opt/bitnami/apps/owncloud/data/owncloud.log /etc/fail2ban/f
 ```
 
 systemctl restart fail2ban
+
+
+## The plugins
+
+```bash
+sudo -u www-data /usr/bin/php occ
+```
