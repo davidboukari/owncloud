@@ -189,7 +189,9 @@ You can use it to install Contact, Agenda, ...
  Add cardDav account => the url to enter is  https://yourwebsite.com/remote.php/carddav/addressbooks/yourname/contacts and setup the login / password
 <p>
 
-* +Troubleshooting+
+Use the button parameter at the left bottom and select import
+
+* Troubleshooting contacts
 
 *Seuls vCard version 4.0 (RFC6350) ou version 3.0 (RFC2426) sont pris en charge.*
 You can use: https://github.com/jowave/vcard2to3.git
