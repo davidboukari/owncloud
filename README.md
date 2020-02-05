@@ -189,6 +189,9 @@ You can use it to install Contact, Agenda, ...
 
  * See https://code.adonline.id.au/sync-phone-contacts-via-owncloud/
 
+Export your contacts under android phones by using Contact application then export them to .vcf file
+share this file with your application ocloud to send it then download it to your computer.
+
 <p>
  In the phone with Playstore => Install CardDav-Sync free
  Add cardDav account => the url to enter is  https://yourwebsite.com/remote.php/carddav/addressbooks/yourname/contacts and setup the login / password
