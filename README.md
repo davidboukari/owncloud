@@ -174,7 +174,7 @@ Check the list of app availaible
 sudo -u www-data /usr/bin/php occ app:list
 ```
 
-## Synchronize the contacts ftom the phone
+## Synchronize the contacts from the phone
 
  * See https://code.adonline.id.au/sync-phone-contacts-via-owncloud/
 
