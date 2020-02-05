@@ -4,6 +4,11 @@ https://websiteforstudents.com/install-owncloud-on-ubuntu-16-04-lts-with-apache2
 
 https://docs.bitnami.com/oci/apps/owncloud/configuration/configure-fail2ban/
 
+Android applications: 
+
+* https://play.google.com/store/apps/details?id=org.dmfs.carddav.sync
+* https://play.google.com/store/apps/details?id=com.ocloud24.android
+
 * There are 9 Steps
 
 ## Step 1: Install Apache2
