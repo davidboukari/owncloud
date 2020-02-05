@@ -166,6 +166,20 @@ systemctl restart fail2ban
 
 ## The plugins
 
+To add somes plugins connect in admin account => go to settings => Application activate / Deactivate
+The plugins become availaible in the menu in left top corner
+
+Check the list of app availaible
 ```bash
-sudo -u www-data /usr/bin/php occ
+sudo -u www-data /usr/bin/php occ app:list
 ```
+
+## Synchronize the contacts ftom the phone
+
+ * See https://code.adonline.id.au/sync-phone-contacts-via-owncloud/
+
+<p>
+ In the phone with Playstore => Install CardDav-Sync free
+ Add cardDav account => the url to enter is  https://yourwebsite.com/remote.php/carddav/addressbooks/yourname/contacts and setup the login / password
+<p>
+
