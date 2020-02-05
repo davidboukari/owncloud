@@ -183,3 +183,6 @@ sudo -u www-data /usr/bin/php occ app:list
  Add cardDav account => the url to enter is  https://yourwebsite.com/remote.php/carddav/addressbooks/yourname/contacts and setup the login / password
 <p>
 
+* +Troubleshooting+
+
+*Seuls vCard version 4.0 (RFC6350) ou version 3.0 (RFC2426) sont pris en charge.*
