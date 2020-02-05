@@ -186,3 +186,9 @@ sudo -u www-data /usr/bin/php occ app:list
 * +Troubleshooting+
 
 *Seuls vCard version 4.0 (RFC6350) ou version 3.0 (RFC2426) sont pris en charge.*
+You can use: https://github.com/jowave/vcard2to3.git
+
+```bash
+cd vcard2to3
+./vcard2to3.py Contacts.vcf
+```
