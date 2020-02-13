@@ -185,6 +185,12 @@ sudo -u www-data /usr/bin/php occ app:list
 * To use the market place just click to the left top corner and select market place.
 You can use it to install Contact, Agenda, ... 
 
+## Agenda
+
+* Search somes applications in android "davdroid" compatible with caldav
+* Enter the url https://myserverurl/remote.php/dav/
+
+
 ## Synchronize the contacts from the phone
 
  * See https://code.adonline.id.au/sync-phone-contacts-via-owncloud/
