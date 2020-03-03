@@ -143,7 +143,7 @@ Create the /etc/fail2ban/filter.d/owncloud.conf:
 
 ```bash
 [Definition]
-failregex={"reqId":".*","remoteAddr":".*","app":"core","message":"Login failed: '.*' \(Remote IP: '<HOST>\)","level":2,"time":".*"}
+failregex={"reqId":".*","level":2,"time":".*","remoteAddr":".*","user":".*","app":"core","method":"POST","url":".*","message":"Login failed: '.*' \(Remote IP: '<HOST>'\)"}
 ignoreregex =
 ```
 
@@ -154,7 +154,8 @@ Copy the /etc/fail2ban/jail.conf file to the /etc/fail2ban/jail.local file and a
 [owncloud]
 enabled  = true
 filter   = owncloud
-action = iptables-multiport[name=owncloud, port="http,https"]
+#action = iptables-multiport[name=owncloud, port="http,https"]
+port="http,https"
 logpath  = /var/www/html/owncloud/data/owncloud.log
 maxretry = 5
 findtime = 600
