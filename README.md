@@ -138,7 +138,7 @@ Check the url for your domain name
 ## Step 9: Activate Fail2ban rules to block access to bruteforce attempts
 
 * See [https://github.com/davidboukari/fail2ban
-
+* See [https://blog.bandinelli.net/index.php?post/2015/01/02/Entretenir-et-s%C3%A9curiser-ownCloud-avec-logrotate-et-fail2ban]
 Create the /etc/fail2ban/filter.d/owncloud.conf:
 
 ```bash
