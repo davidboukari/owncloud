@@ -170,6 +170,8 @@ sudo fail2ban-regex /opt/bitnami/apps/owncloud/data/owncloud.log /etc/fail2ban/f
 
 systemctl restart fail2ban
 
+## Webdav
+* https://docs.ccorazza.fr/9.0/doc_web_user/html/files/access_webdav.html
 
 ## The plugins
 
