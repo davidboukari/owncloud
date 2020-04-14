@@ -219,5 +219,12 @@ cd vcard2to3
 ./vcard2to3.py Contacts.vcf
 ```
 
-## the cache files 
+## the cache files and backup a directory or a file
 In db there are in the table "oc_filecache" 
+
+```bash
+# Add a file or a direcory
+sudo cp -r <directorytobackup> /var/www/html/owncloud/data/<userid>/files
+cd /var/www/html/owncloud
+sudo -u www-data php occ files:scan <userid> -p <userid>/files/<directorytobackup>
+```
