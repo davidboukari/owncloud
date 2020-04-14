@@ -220,7 +220,7 @@ cd vcard2to3
 ```
 
 ## the cache files and backup a directory or a file
-In db there are in the table "oc_filecache" 
+In db they are in the table "oc_filecache" 
 
 ```bash
 # Add a file or a direcory
