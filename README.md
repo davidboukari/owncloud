@@ -218,3 +218,6 @@ You can use: https://github.com/jowave/vcard2to3.git
 cd vcard2to3
 ./vcard2to3.py Contacts.vcf
 ```
+
+## the cache files 
+In db there are in the table "oc_filecache" 
