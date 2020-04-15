@@ -226,5 +226,5 @@ In db they are in the table "oc_filecache"
 # Add a file or a direcory
 sudo cp -r <directorytobackup> /var/www/html/owncloud/data/<userid>/files
 cd /var/www/html/owncloud
-sudo -u www-data php occ files:scan <userid> -p <userid>/files/<directorytobackup>
+sudo -u www-data php occ -vvv files:scan <userid> -p <userid>/files/<directorytobackup>
 ```
