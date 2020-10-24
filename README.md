@@ -4,6 +4,10 @@ https://websiteforstudents.com/install-owncloud-on-ubuntu-16-04-lts-with-apache2
 
 https://docs.bitnami.com/oci/apps/owncloud/configuration/configure-fail2ban/
 
+## upgrade
+
+* https://doc.owncloud.com/server/admin_manual/maintenance/manual_upgrade.html
+
 Android applications: 
 
 * https://play.google.com/store/apps/details?id=org.dmfs.carddav.sync
