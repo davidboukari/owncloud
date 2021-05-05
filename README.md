@@ -223,6 +223,21 @@ cd vcard2to3
 ./vcard2to3.py Contacts.vcf
 ```
 
+### Error: Got a packet bigger than 'max_allowed_packet'bytes
+```
+mysql -h localhost
+MariaDB [(none)]> SHOW VARIABLES LIKE 'max_allowed_packet';
++--------------------+----------+
+| Variable_name      | Value    |
++--------------------+----------+
+| max_allowed_packet | 16777216 |
++--------------------+----------+
+1 row in set (0.20 sec)
+
+SET GLOBAL max_allowed_packet=1167772160;
+```
+
+
 ## the cache files and backup a directory or a file
 In db they are in the table "oc_filecache" 
 
